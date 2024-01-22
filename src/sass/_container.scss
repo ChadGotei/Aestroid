@@ -1,0 +1,94 @@
+.anime {
+    height: 100%;
+    width: 100rem;
+    background-color: inherit;
+    border-radius: 10px;
+    // z-index: 10;
+
+    .title {
+        font-size: 7rem;
+        font-family: Poppins;
+        font-weight: 200;
+        padding-left: 10%;
+        padding-top: 3rem;
+        text-decoration: none;
+    }
+
+    .title.big{
+        font-size: 4.5rem;
+    }
+
+    .upper_part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 10rem;
+        width: 80rem; // temporary for now
+        gap: 8rem;
+    }
+
+    .image {
+        max-height: 40rem;
+        max-width: 25rem; //* will decide later
+    } 
+
+    .right_item {
+        font-size: 2rem;
+
+        span {
+            padding-left: 10px;
+            font-weight: bolder;
+            // color: $color-grey-light-2;
+        }
+    }
+
+    .btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        // background-color: white;
+        margin: 20px;
+
+        .btn--round {
+            height: 6.4rem;
+            width: 6.4rem;
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.lower_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    padding-left: 4rem;
+    font-size: 1.5rem;
+
+    h3 {
+        font-size: 3rem;
+        font-family: poppins;
+        color: black;
+        font-weight: bolder;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 1.7rem;
+        padding-right: 10px;
+        color: black;
+    }
+
+    .lower_second_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        div{
+            color: $color-grey-light-2;
+        }
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script type="module" src="src/js/controller.js"></script>
+    <title>Aestroid 🧚‍♂️</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo_container" href="https://github.com/ChadGotei" target="_blank">
+            <img src="src/img/favicon.png" alt="Logo" class="header__logo" /> <span>ESTROID</span>
+        </a>
+
+        <form class="search">
+            <input type="text" class="search__field" placeholder="Search for over 1,000,000 Anime..." />
+            <button class="btn search__btn">
+                <svg class="search__icon">
+                    <use href="src/img/icons.svg#icon-search"></use>
+                </svg>
+                <span>Search</span>
+            </button>
+        </form>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--bookmarks">
+                        <svg class="nav__icon">
+                            <use href="src/img/icons.svg#icon-bookmark"></use>
+                        </svg>
+                        <span>Favorites</span>
+                    </button>
+                    <div class="bookmarks">
+                        <ul class="bookmarks__list">
+                            <div class="message">
+                                <div>
+                                    <svg>
+                                        <use href="src/img/icons.svg#icon-smile"></use>
+                                    </svg>
+                                </div>
+                                <p>
+                                    No Favorites yet. Find your favorite anime and mark them!
+                                </p>
+                            </div>
+
+                            <!-- <li class="preview">
+                                <a class="preview__link" data-name="">
+                                    <figure class="preview__fig">
+                                        <img src="src/img/favicon.png" alt="Test" />
+                                    </figure>
+                                    <div class="preview__data">
+                                        <h4 class="preview__name">
+                                            Pasta with Tomato Cream ...
+                                        </h4>
+                                        <p class="preview__publisher">The Pioneer Woman</p>
+                                    </div>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </li>
+
+                <!--  <li class="nav__item">
+                    <button class="nav__btn nav__btn--theme" data-theme = "dark">
+                        <img src="src/img/theme.png" alt="change theme">
+                    </button>
+                </li> -->
+
+                <li class="nav__item">
+                    <button class="nav__btn btn--show-modal">SIGN UP</button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="error">
+        Too many bitches
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="spinner">
+                <svg>
+                    <use href="src/img/icons.svg#icon-loader"></use>
+                </svg>
+            </div>
+
+            <section class="anime">
+                <!-- <a>
+                    <h2 class="title">Title</h2>
+                </a>
+
+                <div class="upper_part anime_section">
+                    <img alt="Cover" class="image">
+                    <div class="right_part">
+                        <div class="right_item">💚: <span>N/A</span></div>
+                        <div class="right_item">Popularity: <span>N/A</span></div>
+                        <div class="right_item">Rank: <span>N/A</span></div>
+                        <div class="right_item">Ratings: <span>N/A</span></div>
+                    </div>
+                </div>
+
+                <div class="btn_container">
+                    <button class="btn--round">💚</button>
+                    <button class="btn--round">🧲</button>
+                </div>
+
+                <div class="lower_part anime_section">
+                    <div class="lower_second_container">
+                        <h3 class="down_heading">
+                            <b>More</b>
+                        </h3>
+                        <div class="down_item"><span>Japanese Name:</span> N/A</div>
+                        <div class="down_item"><span>Year:</span> N/A</div>
+                        <div class="down_item"><span>Episodes:</span> N/A</div>
+                        <div class="down_item"><span>Duration:</span> N/A</div>
+                    </div>
+
+                    <div class="lower_second_container">
+                        <h3 class="down_heading">
+                            <b>Sypnosis</b>
+                        </h3>
+                        <div class="syn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo magnam quam
+                            voluptatum temporibus est totam, obcaecati sit officiis vel dicta a odit. Quae repudiandae
+                            inventore perferendis totam quaerat maiores magnam!</div>
+                    </div>
+                    </div> -->
+
+            </section>
+
+            <section class="search-results">
+                <ul class="results" style="box-shadow: none;">
+                    <!-- <li class="preview">
+                        <a class="preview__link preview__link--active" href="#">
+                            <figure class="preview__fig">
+                                <img src="src/img/favicon.png" alt="Test" />
+                                <div class="preview__data">
+                                    <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                                    <div class="rank">Rank : <span>N/A</span></div>
+                                </div>
+                            </figure>
+                    </li> -->
+                </ul>
+
+
+                <div class="pagination">
+                    <!-- <button class="btn--inline pagination__btn--prev">
+                      <svg class="search__icon">
+                        <use href="src/img/icons.svg#icon-arrow-left"></use>
+                      </svg>
+                      <span>Page 1</span>
+                    </button>
+                    <button class="btn--inline pagination__btn--next">
+                      <span>Page 3</span>
+                      <svg class="search__icon">
+                        <use href="src/img/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button> -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header"><span class="highlight">Sign up</span></h2>
+        <form class="modal__form">
+            <label>Full Name</label>
+            <input type="text" />
+
+            <label>Email address</label>
+            <input type="email" />
+
+            <label>Password</label>
+            <input type="password" />
+        </form>
+        <button class="btn btn--signup-modal">Submit &rAarr;</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>

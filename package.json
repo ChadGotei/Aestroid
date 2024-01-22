@@ -1,0 +1,21 @@
+{
+  "name": "aestroid",
+  "version": "1.0.0",
+  "description": "Place to explore anime",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Gaurav Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.35.0",
+    "cors-anywhere": "^0.4.4",
+    "parcel": "^2.11.0",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0"
+  }
+}

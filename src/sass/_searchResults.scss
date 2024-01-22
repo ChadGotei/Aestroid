@@ -1,0 +1,125 @@
+main .search-results {
+    position: absolute;
+    height: 100%;
+    // width: 100%;
+
+    .results {
+        display: grid;
+        margin: 6rem;
+        // background-color: black;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem
+    }
+}
+
+ul.results {
+    box-shadow: inherit;
+}
+
+.results {
+    list-style-type: none;
+    max-width: 30rem;
+    max-height: 50rem;
+}
+
+.preview {
+    position: relative;
+    box-shadow: none;
+
+    &__link {
+
+        &:link,
+        &:visited {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem 3.25rem;
+            transition: all 0.3s;
+            //border-right: 1px solid #fff;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: $color-grey-light-2;
+            transform: translateY(-2px);
+
+            .preview__title {
+                color: black;
+            }
+        }
+
+        &--active {
+            /* background-color: $color-grey-light-2;
+            background-image: $gradient-2; */
+            color: $color-grey-dark-2;
+        }
+    }
+
+    img {
+        max-height: 40rem;
+        max-width: 25rem; //* will decide later
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+
+    .preview__title {
+        color: $white;
+        font-size: 2rem;
+
+        &:hover {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    .rank {
+        font-size: 1.4rem;
+        color: black;
+
+        span {
+            font-weight: bolder;
+        }
+    }
+
+}
+
+
+.pagination {
+    margin-top: auto;
+    padding: 0 3.5rem;
+    width: 100%;
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    &__btn {
+        &--prev {
+            float: left;
+        }
+    }
+
+    &--next {
+        float: right;
+    }
+}
+
+
+.pagination__btn {
+    color: black;
+    &--prev {
+        position: absolute;
+        top: 97%;
+        left: 5%;
+        width: 30%;
+    }
+
+    &--next {
+        position: absolute;
+        top: 97%;
+        left: 106rem;
+        width: 30%;
+    }
+}
